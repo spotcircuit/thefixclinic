@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom utility for interactive image hover effects */
+/* Apply .interactive-image-hover to the parent container (e.g., an <a> tag) */
+/* Apply .image-target to the actual <img> tag within that container */
+.interactive-image-hover .image-target {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.interactive-image-hover:hover .image-target {
+  @apply scale-105 opacity-90; /* Example: scale up and slightly fade */
+}
+
+/* Optional: A helper class for containers that need overflow hidden for scale effect */
+.interactive-image-container {
+  @apply overflow-hidden;
+}

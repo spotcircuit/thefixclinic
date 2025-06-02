@@ -25,8 +25,10 @@ const Button: React.FC<ButtonProps> = ({
   const combinedClassName = `${baseStyles} ${variantStyles[variant]} ${className}`;
 
   if (href) {
+    // We don't pass button props to Link to avoid type conflicts
+    // Only pass the href and className which are safe
     return (
-      <Link href={href} className={`${combinedClassName} inline-block text-center`} {...(props as any)}>
+      <Link href={href} className={`${combinedClassName} inline-block text-center`}>
         {children}
       </Link>
     );

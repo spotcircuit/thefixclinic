@@ -1,11 +1,13 @@
+"use client";
+
 import React from 'react';
 
-interface CardProps {
+type CardProps = {
   children: React.ReactNode;
   className?: string;
-}
+};
 
-const Card: React.FC<CardProps> = ({ children, className = '' }) => {
+export default function Card({ children, className = '' }: CardProps) {
   const baseStyles = 'bg-white p-6 md:p-8 rounded-lg shadow-lg'; // Using shadow-lg for a bit more depth
 
   const combinedClassName = `${baseStyles} ${className}`;
@@ -15,9 +17,7 @@ const Card: React.FC<CardProps> = ({ children, className = '' }) => {
       {children}
     </div>
   );
-};
-
-export default Card;
+}
 
 /*
 // Example Usage:

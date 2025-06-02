@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaPhone, FaMapMarkerAlt, FaFacebook, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
+import Button from '@/components/ui/Button'; // Import the Button component
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
   return (
     <header className="w-full">
       {/* Top Header Bar */}
-      <div className="bg-primary text-white py-2">
+      <div className="bg-teal text-white py-2">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-2 md:mb-0">
             <span className="inline-flex items-center mr-4">
@@ -47,11 +48,14 @@ const Header = () => {
           </Link>
 
           <div className="hidden lg:flex items-center space-x-6">
-            <Link href="https://thefixclinic.janeapp.com/" target="_blank" rel="noopener noreferrer"
-              className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded transition duration-300"
+            <Button 
+              href="https://thefixclinic.janeapp.com/" 
+              variant="header" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
               Request an Appointment
-            </Link>
+            </Button>
             <div className="flex items-center text-primary space-x-4">
               <span className="inline-flex items-center">
                 <FaMapMarkerAlt className="w-4 h-4 mr-2" />
@@ -150,12 +154,16 @@ const Header = () => {
               </ul>
             </nav>
             <div className="mt-6 pt-6 border-t border-gray-200">
-              <Link href="https://thefixclinic.janeapp.com/" target="_blank" rel="noopener noreferrer"
-                className="block w-full bg-primary hover:bg-primary-dark text-white text-center px-4 py-3 rounded transition duration-300"
-                onClick={toggleMenu}
+              <Button 
+                href="https://thefixclinic.janeapp.com/" 
+                variant="header" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={toggleMenu} 
+                fullWidth
               >
                 Request an Appointment
-              </Link>
+              </Button>
               <div className="mt-4 flex flex-col space-y-3">
                 <a href="tel:(703) 576-8315" className="inline-flex items-center text-primary">
                   <FaPhone className="w-5 h-5 mr-2" />

@@ -6,7 +6,7 @@ import { FaPhone } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full bg-accent">
+    <section className="relative w-full bg-teal">
       {/* Main hero container */}
       <div className="relative w-full overflow-hidden">
         <Image
@@ -23,13 +23,13 @@ const HeroSection = () => {
       </div>
       
       {/* Content Section */}
-      <div className="py-16 bg-accent">
+      <div className="py-16 bg-teal text-cream">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 animate-fadeIn">
+            <h1 className="heading-secondary mb-6 animate-fadeIn">
               Our Promise
             </h1>
-            <div className="text-dark space-y-4 mb-8">
+            <div className="body-large space-y-4 mb-8">
               <p>
                 At The Fix Clinic we strive to provide aesthetic and wellness services that exceed every expectation. 
                 With over 30 years of combined experience, our highly knowledgeable and skilled providers are known 
@@ -48,8 +48,8 @@ const HeroSection = () => {
             </div>
             <Button 
               href="tel:(703) 576-8315" 
-              size="lg"
-              className="animate-fadeIn"
+              variant="cta-inverted-pill"
+              size="lg" 
             >
               <FaPhone className="mr-2" />
               CALL US TODAY

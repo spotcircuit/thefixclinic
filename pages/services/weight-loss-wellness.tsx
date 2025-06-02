@@ -55,7 +55,7 @@ const WeightLossWellnessPage = () => {
     {
       title: "Weight Loss Programs",
       description: "Achieve your weight loss goals with our medically supervised programs tailored to your unique needs.",
-      image: "/images/misc/weight-loss-works-1.jpg",
+      image: "/images/services/weight-loss-women.webp",
       link: "/services/weight-loss-wellness/weight-loss"
     },
     {
@@ -103,7 +103,7 @@ const WeightLossWellnessPage = () => {
               <SectionTitle
                 subtitle="Our Approach"
                 title="Wellness From Within"
-                alignment="left"
+                center={true}
               />
               <div className="mt-6 text-gray-700 space-y-4">
                 <p>
@@ -135,7 +135,7 @@ const WeightLossWellnessPage = () => {
           <SectionTitle
             subtitle="Our Services"
             title="Comprehensive Wellness Solutions"
-            alignment="center"
+            center={true}
           />
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -158,7 +158,7 @@ const WeightLossWellnessPage = () => {
           <SectionTitle
             subtitle="Success Stories"
             title="What Our Clients Say"
-            alignment="center"
+            center={true}
           />
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -228,7 +228,7 @@ const WeightLossWellnessPage = () => {
           <SectionTitle
             subtitle="Benefits"
             title="Why Choose Our Wellness Services"
-            alignment="center"
+            center={true}
           />
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -236,7 +236,7 @@ const WeightLossWellnessPage = () => {
               <div className="mr-6">
                 <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
               </div>
@@ -252,7 +252,7 @@ const WeightLossWellnessPage = () => {
               <div className="mr-6">
                 <div className="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center">
                   <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 019-9" />
                   </svg>
                 </div>
               </div>

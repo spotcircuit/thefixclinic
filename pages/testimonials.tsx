@@ -260,7 +260,6 @@ const TestimonialsPage = () => {
                 quote={testimonial.quote}
                 name={testimonial.name}
                 service={testimonial.service}
-                image={testimonial.image}
                 rating={testimonial.rating}
                 source={testimonial.source}
               />

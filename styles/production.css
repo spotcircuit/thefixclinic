@@ -1,0 +1,280 @@
+/* Production Site Custom Styles - Converted from Elementor CSS */
+
+/* Custom Font Loading */
+@font-face {
+  font-family: 'ApfelGrotezk';
+  src: url('/fonts/ApfelGrotezk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face for ApfelGrotezk Medium (font-weight: 600) removed as the font file is not available. */
+
+@font-face {
+  font-family: 'V E R S A I L L E S';
+  src: url('/fonts/Versailles-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Production Button Styles - Exact match from Elementor CSS */
+.btn-primary {
+  /* Typography */
+  font-family: 'ApfelGrotezk', 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  /* Layout */
+  display: inline-block;
+  padding: 4px 20px;
+  border: 1px solid #D5BCAE; /* Beige border */
+  border-radius: 45px; /* Rounded */
+  
+  /* Colors */
+  background-color: #6D8185; /* Teal background */
+  color: #FFFFFF; /* White text */
+  
+  /* Transitions */
+  transition: all 0.3s ease;
+  
+  /* Prevent text selection */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.btn-primary:hover {
+  /* Production button shows minimal change on hover, perhaps a slight brightness or shadow not easily captured. */
+  /* For now, ensure text decoration and maintain colors, slight brightness adjustment if desired */
+  background-color: #607376; /* Slightly darker teal for hover, can be adjusted */
+  color: #FFFFFF;
+  border-color: #D5BCAE; 
+  text-decoration: none;
+}
+
+.btn-primary:focus {
+  background-color: #6D8185; /* Teal background */
+  color: #FFFFFF; /* White text */
+  border-color: #D5BCAE; /* Beige border */
+  outline: 2px solid #A66E4D; /* Brown outline for focus */
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+/* Secondary Button Variant - Default Elementor Style from post-552.css */
+.btn-secondary {
+  font-family: 'ApfelGrotezk', 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1; /* Adjust if 1em (16px) is not desired, original has 1 */
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+  padding: 13px 45px;
+  border: 1px solid #D5BCAE; /* Beige border */
+  border-radius: 0; /* Square corners */
+  
+  background-color: transparent;
+  color: #282828; /* Dark text */
+  
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.btn-secondary:hover {
+  background-color: #D5BCAE; /* Beige background */
+  color: #FFFFFF; /* White text */
+  border-color: #D5BCAE; /* Beige border */
+  text-decoration: none;
+}
+
+.btn-secondary:focus {
+  background-color: #D5BCAE; /* Beige background */
+  color: #FFFFFF; /* White text */
+  border-color: #D5BCAE; /* Beige border */
+  outline: 2px solid #A66E4D; /* Brown outline for focus, consistent with primary */
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+.btn-cta-inverted-pill {
+  background-color: #FFFFFF;
+  color: #282828; /* primary */
+  border: 1px solid #282828; /* primary */
+  border-radius: 45px;
+  padding: 10px 20px; /* Adjust as needed */
+  font-family: 'ApfelGrotezk', 'Montserrat', sans-serif;
+  font-size: 14px; /* Adjust as needed */
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* Consistent with other buttons */
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  line-height: normal; /* Ensure consistent line height */
+}
+
+.btn-cta-inverted-pill:hover,
+.btn-cta-inverted-pill:focus {
+  background-color: #282828; /* primary */
+  color: #FFFFFF;
+  border-color: #282828; /* primary */
+  outline: 2px solid #282828; /* primary - for focus */
+  outline-offset: 2px;
+}
+
+.btn-cta-inverted-pill:focus-visible { /* More specific focus styling */
+  outline: 2px solid #282828; /* primary */
+  outline-offset: 2px;
+}
+
+.btn-cta-inverted-pill:disabled,
+.btn-cta-inverted-pill[disabled] {
+  background-color: #E0E0E0; /* Lighter grey for disabled */
+  color: #A0A0A0; /* Darker grey text for disabled */
+  border-color: #C0C0C0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Production Typography Styles */
+.heading-primary {
+  font-family: 'V E R S A I L L E S', 'Cormorant Garamond', serif;
+  font-size: 85px;
+  line-height: 1.2em;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  color: #282828;
+}
+
+.heading-secondary {
+  font-family: 'V E R S A I L L E S', 'Cormorant Garamond', serif;
+  font-size: 48px;
+  line-height: 1.2em;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  color: #282828;
+}
+
+.heading-tertiary {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  line-height: 1.6em;
+  font-weight: 400;
+  color: #282828;
+}
+
+.heading-quaternary {
+  font-family: 'ApfelGrotezk', 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 1.2em;
+  font-weight: 600;
+  color: #282828;
+}
+
+.body-large {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  line-height: 1.8em;
+  font-weight: 400;
+  color: #696969;
+}
+
+.body-medium {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 400;
+  color: #696969;
+}
+
+.body-small {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.8em;
+  font-weight: 400;
+  color: #696969;
+}
+
+.script-text {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  color: #D5BCAE;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .heading-primary {
+    font-size: 48px;
+    line-height: 1.3em;
+  }
+  
+  .heading-secondary {
+    font-size: 36px;
+    line-height: 1.3em;
+  }
+  
+  .heading-tertiary {
+    font-size: 24px;
+    line-height: 1.4em;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-primary {
+    font-size: 36px;
+  }
+  
+  .heading-secondary {
+    font-size: 28px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+}
+
+/* Production Color Utilities */
+.text-primary { color: #282828; }
+.text-primary-light { color: #696969; }
+.text-secondary { color: #D5BCAE; }
+.text-secondary-light { color: #F6E9E4; }
+.text-teal { color: #6D8185; }
+.text-brown { color: #A66E4D; }
+.text-white { color: #FFFFFF; }
+
+.bg-primary { background-color: #282828; }
+.bg-secondary { background-color: #D5BCAE; }
+.bg-teal { background-color: #6D8185; }
+.bg-brown { background-color: #A66E4D; }
+.bg-cream { background-color: #F8F0E6; }
+.bg-cream-light { background-color: #F9F9F9; }
+.bg-white { background-color: #FFFFFF; }
+
+.border-primary { border-color: #282828; }
+.border-secondary { border-color: #D5BCAE; }
+.border-teal { border-color: #6D8185; }

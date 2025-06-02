@@ -10,8 +10,8 @@ const FounderSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Content Column */}
           <div>
-            <h4 className="text-2xl font-semibold text-primary mb-2">Natasha Prymak, FNP-C</h4>
-            <h5 className="text-xl text-secondary-dark mb-6">Board Certified Nurse Practitioner</h5>
+            <h4 className="heading-quaternary mb-2">Natasha Prymak, FNP-C</h4>
+            <h5 className="body-large text-secondary mb-6">Board Certified Nurse Practitioner</h5>
             
             {/* Mobile image */}
             <div className="block md:hidden mb-6">
@@ -24,7 +24,7 @@ const FounderSection = () => {
               />
             </div>
             
-            <div className="text-dark space-y-4 mb-6">
+            <div className="body-medium space-y-4 mb-6">
               <p>
                 Welcome to The Fix Clinic! I'm so glad you've found us. Whether you've come to this 
                 page through the referral of a friend, or a Google search, I want you to know that our 

@@ -6,7 +6,8 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ children, className = '' }) => {
-  const baseStyles = 'bg-white p-6 md:p-8 rounded-lg shadow-lg'; // Using shadow-lg for a bit more depth
+  // Refined styles: reduced shadow, subtle border, maintained padding and radius.
+  const baseStyles = 'bg-white p-6 md:p-8 rounded-lg border border-gray-200 shadow-md'; 
 
   const combinedClassName = `${baseStyles} ${className}`;
 
